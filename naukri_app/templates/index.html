@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block start %}
+<div class="main">
+    <h1>Naukri Scraper</h1>
+    <h2>Project Overview</h2>
+    <p>This project is a specialized web scraper designed to extract job listing data specifically for freshers with 0 experience from Naukri.com, one of India’s largest job portals. The primary goal of this project is to gather comprehensive information about entry-level job listings.</p>
+    <div class = "form-div">
+        <form action={% url 'get_jobs' %} method="post" enctype="multipart/form-data">
+            {% csrf_token %}  
+            <div class = "container">
+                    <input type="text" id="designation" name="designation" autocomplete="off" placeholder="Enter designation" required><br>
+                    <button type="submit"><i class="bi bi-search"></i><span>Search</span></button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock  %}
+
+{% comment %} action={% url 'get_data' %} {% endcomment %}

@@ -1,0 +1,12 @@
+# Django #
+secret_key.txt
+naukri_app/static/images/about.txt
+static/admin/img/README.txt
+static/admin/js/vendor/jquery/LICENSE.txt
+static/admin/js/vendor/xregexp/LICENSE.txt
+static/images/about.txt
+*.log
+*.pot
+*.pyc
+__pycache__
+db.sqlite3
